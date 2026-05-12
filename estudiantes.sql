@@ -13,6 +13,8 @@ CREATE TABLE estudiantes (
 	constraint estudiantes_pk primary key (id_estudiante)
 );
 
+--Parte 3 — Inserción de Datos
+
 INSERT INTO estudiantes VALUES (1, 'Juan', 'Perez', 20, 'Programacion', '2026-01-10');
 INSERT INTO estudiantes VALUES (2, 'Maria', 'Lopez', 22, 'Base de Datos', '2026-02-15');
 INSERT INTO estudiantes VALUES (3, 'Carlos', 'Gomez', 19, 'Programacion', '2026-03-20');
@@ -28,4 +30,12 @@ INSERT INTO estudiantes VALUES (12, 'Camila', 'Ortega', 22, 'Programacion', '202
 INSERT INTO estudiantes VALUES (13, 'Javier', 'Silva', 25, 'Redes', '2026-05-12');
 INSERT INTO estudiantes VALUES (14, 'Daniela', 'Castro', 21, 'Inteligencia Artificial', '2026-04-18');
 INSERT INTO estudiantes VALUES (15, 'Ricardo', 'Vargas', 24, 'Base de Datos', '2026-01-05');
+
+-- Parte 4 — Consultas SELECT
+
+select * from estudiantes
+select nombres, curso from estudiantes
+select * from estudiantes where edad>18 and edad<25
+select * from estudiantes where curso='Base de Datos'
+select * from estudiantes where fecha_registro between '2026-01-01' and '2026-04-30'
 
