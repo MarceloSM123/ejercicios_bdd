@@ -39,3 +39,14 @@ select * from estudiantes where edad>18 and edad<25
 select * from estudiantes where curso='Base de Datos'
 select * from estudiantes where fecha_registro between '2026-01-01' and '2026-04-30'
 
+-- Parte 5 — UPDATE
+
+UPDATE estudiantes SET curso = 'Inteligencia Artificial' WHERE id_estudiante = 1;
+
+UPDATE estudiantes SET edad = 21 WHERE id_estudiante = 2;
+
+UPDATE estudiantes SET fecha_registro = '2026-05-15' WHERE id_estudiante = 3;
+
+UPDATE estudiantes SET nombres = 'Jorge', apellidos = 'Reyes', edad = 23 WHERE id_estudiante = 4;
+
+UPDATE estudiantes SET curso = 'Programacion Avanzada' WHERE curso = 'Programacion';
