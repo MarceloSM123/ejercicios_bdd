@@ -59,4 +59,7 @@ DELETE FROM estudiantes where  edad = 22;
 DELETE FROM estudiantes where  fecha_registro>'2026-04-30';
 DELETE FROM estudiantes where  nombres='Sofia';
 
+-- Parte 7 — Modificación de la Tabla
+
+alter table estudiantes add column correo VARCHAR(100);
 
