@@ -63,3 +63,18 @@ DELETE FROM estudiantes where  nombres='Sofia';
 
 alter table estudiantes add column correo VARCHAR(100);
 
+--Parte 8 — Actualización de Scripts
+
+INSERT INTO estudiantes VALUES (16, 'Natalia', 'Rojas', 20, 'Seguridad', '2026-05-20', 'natalia.rojas@email.com');
+INSERT INTO estudiantes VALUES (17, 'Sebastian', 'Muñoz', 22, 'Desarrollo Web', '2026-05-21', 'sebastian.muñoz@email.com');
+INSERT INTO estudiantes VALUES (18, 'Paula', 'Gutierrez', 19, 'Redes', '2026-05-22', 'paula.gutierrez@email.com');
+
+update  estudiantes set correo='Juan.Perez@email.com' where id_estudiante = 1;
+update  estudiantes set correo='Maria.Lopez@email.com' where id_estudiante = 2;
+update estudiantes set correo='Carlos.Gomez@email.com' where id_estudiante = 3;
+
+select * from estudiantes;
+select correo from estudiantes where id_estudiante>3;
+select * from estudiantes where edad>22;
+
+
