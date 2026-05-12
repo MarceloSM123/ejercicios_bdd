@@ -80,7 +80,7 @@ select * from estudiantes where edad>22;
 -- Parte 9 — Consultas con Fechas
 
 select * from estudiantes where fecha_registro>'2026-02-01';
-select * from estudiantes where fecha_registro<'2026-05-01';
+select * from estudiantes where fecha_registro < '2026-05-01';
 select * from estudiantes where fecha_registro= '2026-03-15';
 select * from estudiantes where curso = 'Programacion' and fecha_registro>'2026-01-01';
 
