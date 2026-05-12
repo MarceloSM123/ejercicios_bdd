@@ -1,8 +1,12 @@
+
+
 CREATE TABLE estudiantes (
-    id_estudiante INTEGER,
+    id_estudiante INT ,
     nombres VARCHAR(50),
     apellidos VARCHAR(50),
-    edad INTEGER,
+    edad INT,
     curso VARCHAR(50),
-    fecha_registro DATE
+    fecha_registro VARCHAR(10),
+	constraint estudiantes_pk primary key (id_estudiante)
 );
+
